@@ -15,14 +15,14 @@ export default function LandingPage() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white shadow-md z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-blue-600">ProServices</h1>
+          <h1 className="text-2xl font-bold text-purple-600">Multipl AI Solutions</h1>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8">
-            <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-blue-600">Home</button>
-            <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-blue-600">Services</button>
-            <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-blue-600">About</button>
-            <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-blue-600">Contact</button>
+            <button onClick={() => scrollToSection('home')} className="text-gray-700 hover:text-purple-600">Home</button>
+            <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-purple-600">Services</button>
+            <button onClick={() => scrollToSection('about')} className="text-gray-700 hover:text-purple-600">About</button>
+            <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-purple-600">Contact</button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -48,17 +48,17 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-32 pb-20 px-4 bg-gradient-to-r from-blue-50 to-indigo-50">
+      <section id="home" className="pt-32 pb-20 px-4 bg-gradient-to-r from-purple-50 to-indigo-50">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Professional Services You Can Trust
+            AI, Digital & Social Done Right..
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            We deliver excellence in every project. Expert solutions tailored to your business needs.
+            Transforming businesses through intelligent AI solutions and digital innovation.
           </p>
           <button
             onClick={() => scrollToSection('contact')}
-            className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 inline-flex items-center gap-2"
+            className="bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 inline-flex items-center gap-2"
           >
             Get Started <ArrowRight size={20} />
           </button>
@@ -80,7 +80,7 @@ export default function LandingPage() {
               { title: 'Training', desc: 'Empower your team with skills' }
             ].map((service, idx) => (
               <div key={idx} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
-                <CheckCircle className="text-blue-600 mb-4" size={32} />
+                <CheckCircle className="text-purple-600 mb-4" size={32} />
                 <h4 className="text-xl font-bold mb-3 text-gray-900">{service.title}</h4>
                 <p className="text-gray-600">{service.desc}</p>
               </div>
@@ -123,7 +123,7 @@ export default function LandingPage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 bg-blue-600">
+      <section id="contact" className="py-20 px-4 bg-purple-600">
         <div className="max-w-6xl mx-auto text-center text-white">
           <h3 className="text-4xl font-bold mb-8">Get In Touch</h3>
 
@@ -161,7 +161,7 @@ export default function LandingPage() {
               rows="5"
               className="w-full p-3 mb-4 rounded text-gray-900"
             ></textarea>
-            <button className="w-full bg-white text-blue-600 font-bold py-3 rounded hover:bg-gray-100">
+            <button className="w-full bg-white text-purple-600 font-bold py-3 rounded hover:bg-gray-100">
               Send Message
             </button>
           </form>
